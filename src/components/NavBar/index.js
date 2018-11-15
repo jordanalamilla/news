@@ -1,28 +1,20 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import ContainerPosts from '../ContainerPosts'
-import ContainerPost from '../ContainerPost'
 
 export class index extends Component {
+
   render() {
     return (
 
-        <Router>
+        <div id="nav-bar">
 
-          <div>
-            <nav>
-              <ul>
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-              </ul>
-            </nav>
-
-            <Route path="/" exact component={ ContainerPosts } />
-            <Route path="/post/:id" component={ ContainerPost } />
+          <nav>
+            <a href="#">
+              <h1>News</h1>
+            </a>
             
-          </div>
-        </Router>
+          </nav>
+          
+        </div>
     )
   }
 }

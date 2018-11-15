@@ -5,26 +5,27 @@ export class index extends Component {
 
     constructor( props ) {
         super( props )
+
         this.state = {
             posts : null
         }
     }
 
     componentDidMount() {
+
+        // GET ALL POSTS
         fetch('https://jsonplaceholder.typicode.com/posts')
-            .then(response => response.json())
-            .then(posts => this.setState({ posts }) )
+            .then( response => response.json() )
+            .then( posts => this.setState({ posts }) );
     }
 
   render() {
 
     const { posts } = this.state;
-    console.log(posts);
 
     return (
 
-      <div>
-            <h1>Posts</h1>
+      <div id="container-posts">
             {
                 posts &&
                 posts.map(post => {

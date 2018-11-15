@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import './App.css';
-import ContainerPosts from "./components/ContainerPosts";
+import React, { Component } from 'react'
+import './App.css'
+import NavBar from './components/NavBar'
+import ContainerPosts from "./components/ContainerPosts"
 
 class App extends Component {
   
@@ -8,6 +9,7 @@ class App extends Component {
     return (
       <div className="App">
 
+        <NavBar />
         <ContainerPosts />
 
       </div>

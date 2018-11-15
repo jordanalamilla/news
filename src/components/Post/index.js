@@ -25,8 +25,8 @@ export class index extends Component {
 
   render() {
 
-    const { post } = this.state;
-    const { author } = this.state;
+    const { post }      = this.state;
+    const { author }    = this.state;
 
     return (
         <div className="post">
