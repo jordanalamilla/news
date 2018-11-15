@@ -1,0 +1,13 @@
+button {
+    border-radius: 2px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    margin: 1em 0;
+}
+
+.green {
+    border: 1px solid #4d644d;
+    color: #1b331b;
+    background-color: #eff0ec;
+}

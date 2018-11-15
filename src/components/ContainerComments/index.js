@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './style.css'
 import Comment from '../Comment'
 
 export class index extends Component {
@@ -44,11 +45,11 @@ export class index extends Component {
 
       <div className="container-comments">
       
-            <h3>{ commentCount } comments</h3>
+            {/* <h3>{ commentCount } comments</h3> */}
 
             {/* BUTTON TO SHOW/HIDE COMMENTS */}
-            <button className="button-toggle-comments" onClick={ toggleComments }>
-                { showComments ? 'Hide' : 'Show' } Comments
+            <button className="green button-toggle-comments" onClick={ toggleComments }>
+                { showComments ? 'Hide' : 'Show' } { commentCount } comments
             </button>
 
             {

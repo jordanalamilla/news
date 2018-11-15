@@ -1,0 +1,12 @@
+.comment {
+    margin: 2em 0;
+    line-height: 1.5;
+}
+
+.commenter {
+    margin-bottom: 0.5em;
+}
+
+.comment-body {
+    color: #777;
+}

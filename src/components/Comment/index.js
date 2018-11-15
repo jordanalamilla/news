@@ -1,8 +1,14 @@
 import React from 'react';
+import './style.css'
 
 const Comment = props => {
 
-    return <p><strong>{ props.comment.email }:</strong> { props.comment.body }</p>
+    return(
+        <div className="comment">
+            <p className="commenter">{ props.comment.email }:</p>
+            <p className="comment-body">{ props.comment.body }</p>
+        </div>
+    )
 }
 
 export default Comment

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './style.css'
 import ContainerComments from '../ContainerComments'
 
 export class index extends Component {
@@ -29,10 +30,10 @@ export class index extends Component {
     const { author }    = this.state;
 
     return (
-        <div className="post">
+        <div className="post shadow">
             <h2>{ post.title }</h2>
-            <p>By { author }</p>
-            <p>{ post.body }</p>
+            <p className="author">By { author }</p>
+            <p className="body">{ post.body }</p>
             <ContainerComments post={ post } />
         </div>
     )

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './style.css'
 import Post from '../Post'
 
 export class index extends Component {
