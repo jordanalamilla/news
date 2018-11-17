@@ -8,12 +8,6 @@ class App extends Component {
   
   render() {
 
-    // window.onscroll = () => {
-    //   if( window.scrollY === document.body.scrollHeight ) {
-    //     console.log('MATCH');
-    //   }
-    // }
-
     return (
       <div className="App">
 

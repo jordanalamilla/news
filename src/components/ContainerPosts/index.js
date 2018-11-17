@@ -25,10 +25,6 @@ export class index extends Component {
 
   render() {
 
-    const loadFivePosts = () => {
-        console.log(window.scrollY);
-    }
-
     const { posts } = this.state;
 
     return (
