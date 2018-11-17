@@ -9,7 +9,7 @@ export class index extends Component {
         <div id="nav-bar" className="shadow">
 
           <nav>
-            <a href="#">
+            <a href="/">
               <h1>News</h1>
             </a>
 

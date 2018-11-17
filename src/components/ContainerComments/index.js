@@ -44,8 +44,6 @@ export class index extends Component {
     return (
 
       <div className="container-comments">
-      
-            {/* <h3>{ commentCount } comments</h3> */}
 
             {/* BUTTON TO SHOW/HIDE COMMENTS */}
             <button className="green button-toggle-comments" onClick={ toggleComments }>

@@ -11,3 +11,10 @@ button {
     color: #1b331b;
     background-color: #eff0ec;
 }
+
+@media only screen and (min-width : 768px) {
+  
+    .container-comments {
+      display: none;
+    }
+  }

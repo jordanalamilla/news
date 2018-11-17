@@ -8,7 +8,8 @@ export class index extends Component {
         super( props )
 
         this.state = {
-            posts : null
+            posts : null,
+            height : 0
         }
     }
 
@@ -18,9 +19,15 @@ export class index extends Component {
         fetch('https://jsonplaceholder.typicode.com/posts')
             .then( response => response.json() )
             .then( posts => this.setState({ posts }) );
+
+        
     }
 
   render() {
+
+    const loadFivePosts = () => {
+        console.log(window.scrollY);
+    }
 
     const { posts } = this.state;
 
